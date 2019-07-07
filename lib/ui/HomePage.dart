@@ -1,6 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:persistencia_de_dados_flutter/helpers/DbHelper.dart';
 
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'SQFlite Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: MyHomePage(),
+    );
+  }
+}
 
 class MyHomePage extends StatelessWidget {
 
@@ -8,6 +20,7 @@ class MyHomePage extends StatelessWidget {
   final dbHelper = DatabaseHelper.instance;
 
   //Layout da HomePage
+  @override
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(

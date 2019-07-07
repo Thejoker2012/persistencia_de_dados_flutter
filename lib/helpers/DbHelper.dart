@@ -41,11 +41,13 @@ class DatabaseHelper{
 
   //Código SQL para a criação do banco de dados e tabelas
   Future _onCreate(Database db, int version) async{
-    await db.execute('CREATE TABLE $table('
-        '$columnID INTEGER PRIMARY KEY),'
-        '$columnNome TEXT NOT NULL,'
-        '$columnIdade INTEGER NOT NULL'
-    );
+    await db.execute('''
+          CREATE TABLE $table (
+            $columnID INTEGER PRIMARY KEY,
+            $columnNome TEXT NOT NULL,
+            $columnIdade INTEGER NOT NULL
+          )
+          ''');
   }
 
   //Método helper
