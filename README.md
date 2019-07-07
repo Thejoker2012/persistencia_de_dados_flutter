@@ -1,6 +1,10 @@
-# persistencia_de_dados_flutter
+# Persistencia de Dados com Flutter
 
-A new Flutter application.
+-Criando métodos
+ - Insert
+ - Update
+ - Delete
+ - findQuery
 
 ## Getting Started
 
